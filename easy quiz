@@ -1,0 +1,48 @@
+import math 
+import time 
+import os 
+print("Welcome to my quiz")
+input("Press enter to start\n\n\n\n\n")
+time.sleep(1)
+print("please answer with a lower case letter")
+score = 0 
+life = 2
+if life < 0 :
+  input("you loose\npress enter to quit")
+  quit()
+ 
+
+question1 = str(input("whats 2 + 2\na.4\nb.2\n"))
+if question1 == "a" :
+   score +=1
+   print ("\nscore:",score)
+   print("life:",life)
+   time.sleep(1)
+   input("Press enter to move on ")
+else:
+   print("\nYou got that wrong")
+   life -=1
+   print("life:",life)
+   print("score", score)
+   if life == 0 :
+     time.sleep(1)
+     input("\nyou loose\npress enter to quit")
+     quit()
+ 
+question2 = str(input("\n\nif x = 4 \n what is x + 3?\na.8\nb.0.7\nc.7"))
+if question2 == "c":
+   score +=1
+   print ("\nscore:",score)
+   print("life:",life)
+   time.sleep(1)
+   input("Press enter to move on ")
+else:
+   print("\nYou got that wrong")
+   life -=1
+   print("life:",life)
+   print("score", score)
+   if life == 0 :
+     time.sleep(1)
+     input("you loose\npress enter to quit")
+     quit()
+ 
