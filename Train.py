@@ -27,9 +27,12 @@ else:
 continueanswere = str(input("would you like to know how many carages you will need?  y/n:"))
 if continueanswere == ("y"):
    maxcarridge = 95
-   print ("you will have",fclasspassenger//maxcarridge,"First Class carrages")
-   print ("you will have",sclasspassengers//maxcarridge,"Second Class carrages")
-   print ("In total there will be",(fclasspassenger//maxcarridge)+(sclasspassengers//maxcarridge),"carrages")
+   # inscrease this numbwe aswell
+   sclasscar = sclasspassengers/maxcarridge
+   fclasscar = fclasspassenger/maxcarridge
+   print ("you will have",math.ceil(fclasscar),"First Class carrages")
+   print ("you will have",math.ceil(sclasscar),"Second Class carrages")
+   print ("In total there will be",fclasscar + sclasscar,"carrages")
    ahhhbigscaryman = str(input("would you like to find the total income from the train?  y/n:"))
    if ahhhbigscaryman == ("y"):
      engine = 800
@@ -46,3 +49,4 @@ if continueanswere == ("y"):
 else:
   input("press enter to finish")
   quit()
+
